@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container-flex {
+  width: 87.5%;
+  max-width: 1200px;
+  display: flex;
+}
+@media screen and (min-width: 600px) {
+  .container-flex {
+    width: 90%;
+  }
+}
+.container-grid {
+  width: 87.5%;
+  max-width: 1200px;
+  display: grid;
+}
+@media screen and (min-width: 600px) {
+  .container-grid {
+    width: 90%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-block: 2rem;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main > div {
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+main > div > form {
+  position: relative;
+  width: 100%;
+  padding-block: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 2px dashed #0e0e0e;
+  border-radius: 6px;
+}
+main > div > form > .form-header {
+  display: grid;
+  place-items: center;
+}
+main > div > form > .form-header i {
+  font-size: 3.5rem;
+  text-align: center;
+}
+main > div > form > .form-header h2 {
+  text-align: center;
+}
+main > div > form input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.0001;
+  cursor: pointer;
+}
+main > div .preview {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+}
+main > div .preview .preview-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #30363d;
+  padding: 1rem;
+}
+main > div .preview .preview-item__info {
+  display: flex;
+  gap: 1rem;
+}
+main > div .preview .preview-item > span {
+  cursor: pointer;
+}
+main > div .preview .preview-item:first-of-type {
+  border: none;
+}
+main .dragover {
+  opacity: 0.2;
+}
+
+/*# sourceMappingURL=index.css.map */
