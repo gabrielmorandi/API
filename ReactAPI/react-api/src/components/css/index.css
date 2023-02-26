@@ -75,6 +75,7 @@ main > div > form {
 main > div > form > .form-header {
   display: grid;
   place-items: center;
+  gap: 1rem;
 }
 main > div > form > .form-header i {
   font-size: 3.5rem;
