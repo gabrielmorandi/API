@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container-flex {
+  width: 87.5%;
+  max-width: 1200px;
+  display: flex;
+}
+@media screen and (min-width: 700px) {
+  .container-flex {
+    width: 90%;
+  }
+}
+.container-grid {
+  width: 87.5%;
+  max-width: 1200px;
+  display: grid;
+}
+@media screen and (min-width: 700px) {
+  .container-grid {
+    width: 90%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  body .no-mobile {
+    display: none;
+  }
+}
+
+.btn-primary {
+  display: flex;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-color-primary {
+  background-color: #B3B3B3;
+}
+.btn-color-primary a {
+  padding: 14px 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+body nav {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+body nav div {
+  display: flex;
+  gap: 1rem;
+}
+body nav div > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+body nav div > div a {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 30px;
+  color: #B3B3B3;
+}
+@media screen and (min-width: 900px) {
+  body nav div > div:after {
+    content: "";
+    display: flex;
+    width: 1px;
+    height: 100%;
+    margin-inline: 1rem;
+    background-color: #B3B3B3;
+  }
+}
+body nav div ul {
+  display: flex;
+  height: 100%;
+  list-style: none;
+  align-items: center;
+  gap: 1.5rem;
+}
+body nav div ul li a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #848383;
+}
+
+header {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+header > div {
+  gap: 1rem;
+  padding-block: 40px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main > div {
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+main > div > form {
+  position: relative;
+  width: 100%;
+  padding-block: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 2px dashed #0e0e0e;
+  border-radius: 6px;
+}
+main > div > form > .form-header {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+main > div > form > .form-header i {
+  font-size: 3.5rem;
+  text-align: center;
+}
+main > div > form > .form-header h2 {
+  text-align: center;
+}
+main > div > form input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.0001;
+  cursor: pointer;
+}
+main > div .preview {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+}
+main > div .preview .preview-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #30363d;
+  padding: 1rem;
+}
+main > div .preview .preview-item__info {
+  display: flex;
+  gap: 1rem;
+}
+main > div .preview .preview-item > span {
+  cursor: pointer;
+}
+main > div .preview .preview-item:first-of-type {
+  border: none;
+}
+main .dragover {
+  opacity: 0.2;
+}
+
+footer {
+  width: 100%;
+  margin-block-start: 2rem;
+  display: flex;
+  justify-content: center;
+  padding-block: 1.5rem;
+  color: #B3B3B3;
+  text-align: center;
+}
+footer p {
+  text-align: center;
+}
+footer p a {
+  text-decoration: underline;
+  color: #B3B3B3;
+}
+
+/*# sourceMappingURL=index.css.map */

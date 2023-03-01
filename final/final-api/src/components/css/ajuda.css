@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container-flex {
+  width: 87.5%;
+  max-width: 1200px;
+  display: flex;
+}
+@media screen and (min-width: 700px) {
+  .container-flex {
+    width: 90%;
+  }
+}
+.container-grid {
+  width: 87.5%;
+  max-width: 1200px;
+  display: grid;
+}
+@media screen and (min-width: 700px) {
+  .container-grid {
+    width: 90%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  body .no-mobile {
+    display: none;
+  }
+}
+
+.btn-primary {
+  display: flex;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-color-primary {
+  background-color: #B3B3B3;
+}
+.btn-color-primary a {
+  padding: 14px 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+body nav {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+body nav div {
+  display: flex;
+  gap: 1rem;
+}
+body nav div > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+body nav div > div a {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 30px;
+  color: #B3B3B3;
+}
+@media screen and (min-width: 900px) {
+  body nav div > div:after {
+    content: "";
+    display: flex;
+    width: 1px;
+    height: 100%;
+    margin-inline: 1rem;
+    background-color: #B3B3B3;
+  }
+}
+body nav div ul {
+  display: flex;
+  height: 100%;
+  list-style: none;
+  align-items: center;
+  gap: 1.5rem;
+}
+body nav div ul li a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #848383;
+}
+
+main > div > h2, main > div > p {
+  color: #B3B3B3;
+  width: 100%;
+}
+main > div > h2 {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 72px;
+}
+main > div > p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+}
+main > div img {
+  width: 100%;
+  max-width: 550px;
+  margin-block: 1.5rem;
+}
+main > div > div {
+  width: 100%;
+}
+
+/*# sourceMappingURL=ajuda.css.map */

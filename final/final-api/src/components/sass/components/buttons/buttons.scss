@@ -1,0 +1,14 @@
+.btn-primary {
+    display: flex;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn-color-primary {
+    background-color: $primary-color;
+    a {
+        padding: 14px 2rem;
+        color: #fff;
+        text-decoration: none;
+    }
+}

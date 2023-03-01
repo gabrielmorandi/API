@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "../abstracts/v";
+@import "../abstracts/m";
+
+// geral
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    background-color: $body-color;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    &-flex {
+        width: 87.5%;
+        max-width: 1200px;
+        display: flex;
+        @include tablet {
+            width: 90%;
+        }
+    }
+    &-grid {
+        width: 87.5%;
+        max-width: 1200px;
+        display: grid;
+        @include tablet {
+            width: 90%;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// medias
+body .no-mobile {
+    @include noMobile {
+        display: none;
+    }
+}

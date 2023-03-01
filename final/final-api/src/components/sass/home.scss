@@ -1,0 +1,59 @@
+@import './base/base.scss';
+@import './components/buttons/buttons.scss';
+@import './components/navbar/navbar.scss';
+
+main {
+    width: 100%;
+    @include desktop {
+        margin-block-start: 5rem;
+    }
+    > div {
+        place-items: center;
+        section {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            color: $primary-color;
+            @include mobile {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            > div {
+                @include tablet {
+                    width: 50%;
+                }
+                h1 {
+                    font-weight: 600;
+                    font-size: 3rem;
+                    line-height: 3.5rem;
+                    @include desktop {
+                        font-size: 56px;
+                        line-height: 72px;
+                    }
+                }
+                h2{
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 130%;
+                    @include desktop {
+                        font-size: 20px;
+                        line-height: 160%;
+                    }
+                }
+                > div {
+                    margin-block-start: 1.5rem;
+                }
+            }
+            img {
+                width: 100%;
+                max-width: 550px;
+                @include tablet {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
