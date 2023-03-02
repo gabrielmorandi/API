@@ -2,8 +2,6 @@ import React from 'react'
 
 import IndexMain from '../components/main/IndexMain'
 
-import '../components/css/index.css'
-
 function Index() {
   const onFileChange = (files) => {
     console.log(files)
@@ -11,7 +9,7 @@ function Index() {
 
   return (
       <>
-          <IndexMain onFileChange={(files) => onFileChange(files)} />
+        <IndexMain onFileChange={(files) => onFileChange(files)} />
       </>
   )
 }

@@ -60,7 +60,7 @@ a:hover {
 .btn-color-primary {
   background-color: #B3B3B3;
 }
-.btn-color-primary a {
+.btn-color-primary a, .btn-color-primary p {
   padding: 14px 2rem;
   color: #fff;
   text-decoration: none;
@@ -131,59 +131,146 @@ main > div {
   align-items: center;
   gap: 1rem;
 }
-main > div > form {
-  position: relative;
-  width: 100%;
-  padding-block: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  border: 2px dashed #0e0e0e;
-  border-radius: 6px;
+main > div > div:last-of-type button p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
 }
-main > div > form > .form-header {
+main > div > div {
   display: grid;
   place-items: center;
+  margin-block-end: 3rem;
+}
+main > div > div h1, main > div > div p {
+  text-align: center;
+  color: #848383;
+}
+main > div > div h1 {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 72px;
+}
+main > div > div p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+}
+main > div > form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
-main > div > form > .form-header i {
-  font-size: 3.5rem;
-  text-align: center;
+main > div > form h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 72px;
+  color: #848383;
 }
-main > div > form > .form-header h2 {
-  text-align: center;
+main > div > form label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #B3B3B3;
 }
-main > div > form input {
-  position: absolute;
+main > div > form label input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #B3B3B3;
+  border-radius: 8px;
+  background-color: transparent;
+}
+main > div > form > div:first-of-type {
+  position: relative;
+  width: 100%;
+  margin-block-start: 2rem;
+  padding-block: 4rem;
+  border: 2px dashed #848383;
+  display: grid;
+  place-items: center;
+}
+main > div > form > div:first-of-type > i {
+  font-size: 4rem;
+  color: #848383;
+}
+main > div > form > div:first-of-type > h2 {
+  margin-block-start: 1rem;
+  max-width: 170px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #848383;
+}
+main > div > form > div:first-of-type > input {
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.0001;
-  cursor: pointer;
+  position: absolute;
+  opacity: 0.001;
+}
+main > div > form > div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+main > div > form > div:last-of-type > p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+  color: #B3B3B3;
+  text-align: center;
+}
+main > div > form > div:last-of-type > label {
+  max-width: 270px;
+}
+main > div > form > div:last-of-type > label > div {
+  display: flex;
+  justify-content: center;
+}
+main > div > form > div:last-of-type > label > div > p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 14px 1.6rem;
+  color: #fff;
+  text-align: center;
 }
 main > div .preview {
   width: 100%;
+  max-width: 600px;
+  margin-block-start: 2rem;
   display: flex;
   flex-direction: column;
-  border: 1px solid #30363d;
+  border: 1px solid #848383;
   border-radius: 6px;
+  place-items: initial;
 }
 main > div .preview .preview-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #30363d;
+  border-top: 1px solid #848383;
   padding: 1rem;
 }
 main > div .preview .preview-item__info {
   display: flex;
+  align-items: center;
   gap: 1rem;
+}
+main > div .preview .preview-item__info > i {
+  color: #B3B3B3;
+}
+main > div .preview .preview-item__info > p {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: start;
+  color: #848383;
 }
 main > div .preview .preview-item > span {
   cursor: pointer;
+  color: #B3B3B3;
 }
 main > div .preview .preview-item:first-of-type {
   border: none;
@@ -206,7 +293,7 @@ footer p {
 }
 footer p a {
   text-decoration: underline;
-  color: #B3B3B3;
+  color: #848383;
 }
 
 /*# sourceMappingURL=index.css.map */

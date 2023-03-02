@@ -60,7 +60,7 @@ a:hover {
 .btn-color-primary {
   background-color: #B3B3B3;
 }
-.btn-color-primary a {
+.btn-color-primary a, .btn-color-primary p {
   padding: 14px 2rem;
   color: #fff;
   text-decoration: none;
