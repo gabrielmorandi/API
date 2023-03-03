@@ -57,7 +57,6 @@ main {
             h2 {
                 font-weight: 600;
                 font-size: 32px;
-                line-height: 72px;
                 color: $text-color;
             }
             label {
@@ -154,7 +153,7 @@ main {
                     }
                     > p {
                         font-weight: 500;
-                        font-size: 20px;
+                        font-size: 1rem;
                         text-align: start;
                         color: $text-color;
                     }

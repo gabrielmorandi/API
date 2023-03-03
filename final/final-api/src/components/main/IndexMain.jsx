@@ -4,6 +4,25 @@ import PropTypes from 'prop-types'
 import '../css/index.css'
 import { ImageConfig } from '../../config/ImageConfig'
 
+
+// form validation
+function useFormik({initialValues}) {
+  const [values, setValues] = useState(initialValues)
+
+  function handleChange(e) {
+    const fieldName = e.target.getAttribute('name')
+    setValues({
+      ...values,
+      [fieldName]: e.target.value
+    })
+  }
+
+  return {
+    values,
+    handleChange
+  }
+}
+
 const IndexMain = props => {
   // useRef
   const wrapperRef = useRef(null)
@@ -34,6 +53,15 @@ const IndexMain = props => {
     props.onFileChange(updatedList)
   }
 
+  // formik
+  const formik = useFormik({
+    initialValues: {
+      clientName: 'morandi',
+      clientTel: '123456',
+      clientEmail: 'email@email.com'
+    }
+  })
+
   // pageView
   return (
     <main>
@@ -46,15 +74,15 @@ const IndexMain = props => {
           <h2>Dados de contato:</h2>
           <label>
             <p>Nome: </p>
-            <input type="text" />
+            <input type="text" name='clientName' onChange={formik.handleChange} value={formik.values.clientName} />
           </label>
           <label>
             <p>Telefone: </p>
-            <input type="text" />
+            <input type="text" name='clientTel' onChange={formik.handleChange} value={formik.values.clientTel} />
           </label>
           <label>
             <p>Email: </p>
-            <input type="email" />
+            <input type="email" name='clientEmail' onChange={formik.handleChange} value={formik.values.clientEmail} />
           </label>
           <div ref={wrapperRef} onDragEnter={onDragEnter} onDragLeave={onDragLeave} onDrop={onDrop}>
             <i className="fa-sharp fa-solid fa-file-arrow-up"></i>
