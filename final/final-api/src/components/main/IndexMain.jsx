@@ -71,18 +71,18 @@ const IndexMain = props => {
           <p>Não se preocupe com o tipo de arquivo que você deseja imprimir, suportamos diversos formatos, como PDF, DOC, XLS, JPG, PNG e muito mais.</p>
         </div>
         <form action="#" id='form'>
-          <h2>Dados de contato:</h2>
+          <h2>Dados de contato :)</h2>
           <label>
-            <p>Nome: </p>
-            <input type="text" name='clientName' onChange={formik.handleChange} value={formik.values.clientName} />
+            <p>Nome *</p>
+            <input type="text" name='clientName' placeholder='Seu nome' onChange={formik.handleChange} value={formik.values.clientName} />
           </label>
           <label>
-            <p>Telefone: </p>
-            <input type="text" name='clientTel' onChange={formik.handleChange} value={formik.values.clientTel} />
+            <p>Email *</p>
+            <input type="email" name='clientEmail' placeholder='email@email.com' onChange={formik.handleChange} value={formik.values.clientEmail} />
           </label>
           <label>
-            <p>Email: </p>
-            <input type="email" name='clientEmail' onChange={formik.handleChange} value={formik.values.clientEmail} />
+            <p>Telefone *</p>
+            <input type="text" name='clientTel' placeholder='(XX) X XXXX-XXXX' onChange={formik.handleChange} value={formik.values.clientTel} />
           </label>
           <div ref={wrapperRef} onDragEnter={onDragEnter} onDragLeave={onDragLeave} onDrop={onDrop}>
             <i className="fa-sharp fa-solid fa-file-arrow-up"></i>
@@ -92,7 +92,7 @@ const IndexMain = props => {
           <div>
             <p>ou</p>
             <label htmlFor="file">
-              <div className="btn-primary btn-color-primary">
+              <div className="btn-primary btn-color-blue">
                 <p>Selecione seus arquivos</p>
               </div>
             </label>
@@ -118,7 +118,7 @@ const IndexMain = props => {
         {
           fileList.length > 0 ? (
             <div>
-              <button className='btn-primary btn-color-primary' form='form'><p>Finalizar Envio!</p></button>
+              <button className='btn-secundary btn-border-blue' form='form'><p>Finalizar Envio!</p></button>
             </div>
           ) : null
         }

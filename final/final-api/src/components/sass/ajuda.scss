@@ -5,26 +5,27 @@
 main {
     > div {
         > h2, > p {
-            color: $primary-color;
+            color: $paragraph;
             width: 100%;
         }
         > h2 {
-            font-weight: 600;
-            font-size: 56px;
-            line-height: 72px;
+            @include h1-bold;
         }
         > p {
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 160%;
+            @include h4-regular;
         }
         img {
             width: 100%;
             max-width: 550px;
             margin-block: 1.5rem;
         }
-        > div {
+        > div:has(a) {
+            display: flex;
             width: 100%;
+            > a > p {
+                padding: 11px 9.5px;
+                @include t1-medium;
+            }
         }
     }
 }

@@ -10,22 +10,21 @@ body nav {
             display: flex;
             align-items: center;
             gap: 1rem;
-            a {
-                font-weight: 600;
-                font-size: 1.5rem;
-                line-height: 30px;
-                color: #B3B3B3;
-            }
             @include onMobile {
                 &:after {
                     content: '';
                     display: flex;
-                    width: 1px;
+                    width: 2px;
+                    height: 100%;
                     max-height: 25px;
                     margin-inline: 1rem;
-                    background-color: #B3B3B3;
+                    border-radius: 1px;
+                    background-color: $black;
                 }
             }
+        }
+        > div:first-of-type > a {
+            @include h4-medium;
         }
         ul {
             display: flex;
@@ -34,11 +33,11 @@ body nav {
             align-items: center;
             gap: 1.5rem;
             li a {
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 22px;
-                color: $text-color;
+                @include h4-regular;
             }
         }
+    }
+    > a > p {
+        @include h4-regular;
     }
 }
