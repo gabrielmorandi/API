@@ -4,7 +4,7 @@
 main {
     width: 100%;
     @include desktop {
-        margin-block-start: 5rem;
+        padding-block-start: 5rem;
     }
     > div {
         place-items: center;

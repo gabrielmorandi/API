@@ -183,6 +183,7 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-block-end: 10rem;
 }
 main > div {
   flex-direction: column;
@@ -350,23 +351,42 @@ main .dragover {
   opacity: 0.2;
 }
 
-footer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-block: 1.5rem;
-  color: #2B2C34;
-  text-align: center;
+#root {
+  position: relative;
+  min-height: 100vh;
 }
-footer p {
+#root footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #6246EA;
+  display: grid;
+  place-items: center;
+  padding-block: 1.5rem;
+}
+#root footer > div {
+  justify-content: flex-start;
+  align-items: center;
+}
+#root footer > div > .div::before {
+  content: "";
+  display: flex;
+  width: 2px;
+  height: 25px;
+  max-height: 25px;
+  margin-inline: 2rem;
+  border-radius: 1px;
+  background-color: #FFFFFE;
+}
+#root footer > div p {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  text-align: center;
+  color: #FFFFFE;
 }
-footer p a {
+#root footer > div p a {
   text-decoration: underline;
-  color: #6246EA;
+  color: #FFFFFE;
 }
 
 /*# sourceMappingURL=index.css.map */

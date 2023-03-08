@@ -124,7 +124,7 @@ main {
 }
 @media screen and (min-width: 900px) {
   main {
-    margin-block-start: 5rem;
+    padding-block-start: 5rem;
   }
 }
 main > div {
