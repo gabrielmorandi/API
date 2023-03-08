@@ -2,14 +2,13 @@ import React from 'react'
 
 import { Link } from 'react-router-dom'
 
-import '../css/notFound.css'
 import Ovini from '../../assets/ovini.svg'
 
 
 
 const NotFoundMain = () => {
   return (
-    <main>
+    <main id='not-found'>
         <div className="container-flex">
             <section>
                 <div>

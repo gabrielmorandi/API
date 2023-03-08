@@ -18,24 +18,16 @@ html {
     scroll-behavior: smooth;
 }
 
-h1 {
-    @include h1-medium;
-}
-h2 {
-    @include h2-medium;
-}
-h3 {
-    @include h3-medium;
-}
-h4 {
-    @include h4-regular;
-}
 h1, h2, h3, h4 {
     color: $headline;
 }
 p, a {
-    @include t1-medium;
+    @include p-regular;
     color: $paragraph;
+}
+
+img {
+    max-width: 100%;
 }
 
 .container {
@@ -59,15 +51,8 @@ p, a {
 
 a {
     text-decoration: none;
-    color: $black;
+    color: $paragraph;
     &:hover {
         text-decoration: underline;
-    }
-}
-
-// medias
-body .no-mobile {
-    @include noMobile {
-        display: none;
     }
 }

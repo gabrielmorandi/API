@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 
-import '../css/index.css'
 import { ImageConfig } from '../../config/ImageConfig'
 
 
@@ -64,7 +63,7 @@ const IndexMain = props => {
 
   // pageView
   return (
-    <main>
+    <main id='main'>
       <div className="container-flex">
         <div>
           <h1>Envie seus arquivos!</h1>

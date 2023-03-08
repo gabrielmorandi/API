@@ -1,6 +1,7 @@
 import React from 'react'
 
 import IndexMain from '../components/main/IndexMain'
+import '../components/css/index.css'
 
 function Index() {
   const onFileChange = (files) => {

@@ -1,8 +1,8 @@
-body .btn-primary {
+.btn-primary {
     display: flex;
     border: none;
     border-radius: 8px;
-    text-decoration: none;
+    text-decoration: none !important;
     cursor: pointer;
 }
 .btn-color-blue {
@@ -14,10 +14,10 @@ body .btn-primary {
     }
 }
 
-body .btn-secundary {
+.btn-secundary {
     display: flex;
     background-color: transparent;
-    text-decoration: none;
+    text-decoration: none !important;
     cursor: pointer;
 }
 .btn-border-blue {

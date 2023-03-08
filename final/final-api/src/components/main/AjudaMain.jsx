@@ -2,13 +2,12 @@ import React from 'react'
 
 import { Link } from 'react-router-dom'
 
-import '../css/ajuda.css'
 import Prog from '../../assets/prog.svg'
 import Sync from '../../assets/sync.svg'
 
 const AjudaMain = () => {
   return (
-    <main>
+    <main id='ajuda'>
         <div className="container-flex">
             <h2>Como Funciona</h2>
             <p>Bem-vindo à nossa plataforma de impressão de arquivos! Aqui você pode enviar seus arquivos para impressão diretamente do conforto da sua casa ou escritório. Com a nossa tecnologia de ponta e uma equipe de profissionais altamente qualificados, garantimos que suas impressões serão de alta qualidade e entregues rapidamente.</p>
